@@ -2,6 +2,8 @@
 
 ## Recreation
 
+First,
+
 ```sh
 mkdir bare-react-app
 cd bare-react-app
@@ -38,11 +40,15 @@ yarn-error.log*
 
 ```
 
+then,
+
 ```sh
 yarn add html-webpack-plugin react react-dom webpack webpack-dev-server
 yarn add @babel/cli @babel/core @babel/plugin-transform-runtime @babel/preset-env @babel/preset-react @babel/preset-typescript @babel/runtime @types/node @types/react @types/react-dom @types/webpack babel-loader path ts-loader ts-node typescript webpack-cli --dev
 # npx check-peer-dependencies
 ```
+
+then,
 
 ```sh
 mkdir public
@@ -74,6 +80,8 @@ touch public/index.html
 
 ```
 
+then,
+
 ```sh
 mkdir -p src/App
 touch src/App/App.tsx
@@ -95,6 +103,8 @@ export const App = () => (
 export { App } from './App';
 
 ```
+
+then,
 
 ```sh
 touch index.tsx
@@ -118,6 +128,8 @@ root.render(
 );
 
 ```
+
+then,
 
 ```sh
 touch webpack.config.ts
@@ -175,6 +187,8 @@ export default config;
 
 ```
 
+then,
+
 ```sh
 touch .babelrc
 ```
@@ -214,6 +228,8 @@ touch .babelrc
 
 ```
 
+then,
+
 ```sh
 touch tsconfig.json
 ```
@@ -244,6 +260,8 @@ touch tsconfig.json
 }
 
 ```
+
+then,
 
 ```sh
 yarn start
