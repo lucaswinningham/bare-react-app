@@ -266,3 +266,7 @@ then,
 ```sh
 yarn start
 ```
+
+and we should see
+
+![image](https://github.com/lucaswinningham/bare-react-app/assets/24572180/ecd0bc4c-5410-4afa-9b99-77f8e96bd031)
