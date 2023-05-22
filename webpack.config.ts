@@ -1,4 +1,4 @@
-import path from 'path';
+import { join, resolve } from 'path';
 
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import { type Configuration } from 'webpack';
@@ -16,14 +16,14 @@ const configuration: Configuration = {
   mode: 'development',
   entry: './index.tsx',
   output: {
-    path: path.resolve(__dirname, 'public'),
+    path: resolve(__dirname, 'public'),
     filename: 'main.js',
   },
   target: 'web',
   devServer,
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, 'src'),
+      "@": resolve(__dirname, 'src'),
     },
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
   },
@@ -38,7 +38,7 @@ const configuration: Configuration = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'public', 'index.html'),
+      template: join(__dirname, 'public', 'index.html'),
     }),
   ],
 };
