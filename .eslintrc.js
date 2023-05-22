@@ -8,6 +8,9 @@ const configuration = {
       './tsconfig.json',
     ],
   },
+  env: {
+    node: true,
+  },
   plugins: [
     '@typescript-eslint',
     'react',
@@ -39,6 +42,7 @@ const configuration = {
   ],
   // Rule customization
   rules: {
+    '@typescript-eslint/no-non-null-assertion': 'off',
   },
 };
 

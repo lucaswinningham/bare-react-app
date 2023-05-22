@@ -1,5 +1,7 @@
 {
   "scripts": {
+    "lint": "./node_modules/.bin/eslint '**/*' --config .eslintrc.js",
+    "lint:fix": "yarn lint --fix",
     "start": "webpack-dev-server --config webpack.config.ts",
     "build": "webpack --config webpack.config.ts",
     "typecheck": "tsc"
