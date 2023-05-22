@@ -116,7 +116,7 @@ touch index.tsx
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
-import { App } from './src/App';
+import { App } from '@/App';
 
 const rootElement = document.getElementById('root')!;
 const root = createRoot(rootElement);
@@ -265,4 +265,43 @@ then,
 
 ```sh
 yarn start
+```
+
+### Linting
+
+First,
+
+```sh
+yarn add eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-react-hooks eslint-plugin-react --dev
+touch .eslintrc.js
+```
+
+`.eslintrc.js`
+
+```yaml
+
+```
+
+`webpack.config.ts`
+
+```ts
+...
+
+// eslint-disable-next-line import/no-default-export
+export default config;
+
+```
+
+`package.json`
+
+```json
+{
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint '**/*' --config .eslintrc.js",
+    "lint:fix": "yarn lint --fix",
+    ...
+  },
+  ...
+}
+
 ```
