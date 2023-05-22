@@ -272,7 +272,7 @@ yarn start
 First,
 
 ```sh
-yarn add eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-react-hooks eslint-plugin-react --dev
+yarn add @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-plugin-react eslint-plugin-react-hooks --dev
 touch .eslintrc.js
 ```
 
