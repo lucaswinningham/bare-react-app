@@ -2,35 +2,20 @@
 
 const configuration = {
   root: true,
-  parser: '@typescript-eslint/parser',
+  parser: '@lucaswinningham-eslint/eslint-parser',
   parserOptions: {
     project: [
       './tsconfig.json',
     ],
   },
-  env: {
-    node: true,
-  },
   plugins: [
-    '@typescript-eslint',
-    'react',
-    'react-hooks',
+    '@lucaswinningham-eslint',
   ],
   extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-    'plugin:react/jsx-runtime',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'plugin:@typescript-eslint/strict',
+    'plugin:@lucaswinningham-eslint/eslint-recommended',
+    'plugin:@lucaswinningham-eslint/react',
+    'plugin:@lucaswinningham-eslint/typescript',
   ],
-  settings: {
-    react: {
-      version: 'detect',
-    },
-  },
   ignorePatterns: [
     '**/*.html',
     '**/*.ico',
@@ -42,7 +27,6 @@ const configuration = {
   ],
   // Rule customization
   rules: {
-    '@typescript-eslint/no-non-null-assertion': 'off',
   },
 };
 
