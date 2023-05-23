@@ -2,19 +2,19 @@
 
 const configuration = {
   root: true,
-  parser: '@lucaswinningham-eslint/eslint-parser',
+  parser: '@lucaswinningham/eslint-parser',
   parserOptions: {
     project: [
       './tsconfig.json',
     ],
   },
   plugins: [
-    '@lucaswinningham-eslint',
+    '@lucaswinningham',
   ],
   extends: [
-    'plugin:@lucaswinningham-eslint/eslint-recommended',
-    'plugin:@lucaswinningham-eslint/react',
-    'plugin:@lucaswinningham-eslint/typescript',
+    'plugin:@lucaswinningham/eslint-recommended',
+    'plugin:@lucaswinningham/react',
+    'plugin:@lucaswinningham/typescript',
   ],
   ignorePatterns: [
     '**/*.html',
